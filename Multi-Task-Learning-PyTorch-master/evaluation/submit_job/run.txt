@@ -1,0 +1,26 @@
+sbatch submit_train_job_SLURUM.sh 
+qsub -N t_switch submit_train_job.sh 
+
+TEST: qsub -N test_t_switch submit_test_job.sh 
+
+
+
+-other commands:
+qsub --> sbatch
+qdel --> scancel
+qstat -u --> squeue -u
+qrsh <args> -->  srun <args> --pty bash
+qacct -j <job_id> -- > 	sacct -j <job_id>
+
+–gres=gpu:NUM_GPUS # Argument for using more than one GPU
+
+sacctmgr show qos format=name%15,maxtrespu%30   #check quota
+sacctmgr show assoc where user=nipopovic format=account%15,user%15,partition%15,maxjobs%8,qos%15,defaultqos%15 # see in which group I am
+
+
+#SBATCH  --nodelist=biwirender[08,09,10,11,13,14,15]
+
+tail -F /srv/beegfs02/scratch/switchtasks/data/NIKOLA/Experiments/_logs/JOBID.out
+
+
+
