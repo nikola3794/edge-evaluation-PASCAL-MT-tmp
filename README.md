@@ -10,7 +10,7 @@ This repository is a quick and not so pretty solution for reproducing the edge e
 
 * Open the script root/Multi-Task-Learning-PyTorch-master/evaluation/eval_edge2.py. Set the variable edge_pred_paths to a list of paths of directories where the predicted edges of the validation set are saved as .png images. The predicted edge .png images need to be of the same size as the original input image.
 
-* Open the script root/Multi-Task-Learning-PyTorch-master/evaluation/seism/pr_curves_base.m. Make sure that the variable gt_set has a value 'val', so that only validation data points are evaluated.
+* Open the script root/Multi-Task-Learning-PyTorch-master/evaluation/seism/pr_curves_base.m. Make sure that the variable gt_set has a value 'val'. This is done to only evaluate on validation data points.
 
 * With a python3 interpreter, run the script root/Multi-Task-Learning-PyTorch-master/evaluation/eval_edge2.py 
 
