@@ -8,7 +8,7 @@ This repository is a quick and not so pretty solution for reproducing the edge e
 
 * Open the script root/Multi-Task-Learning-PyTorch-master/utils/mypath.py. Set the variable db_root to the directory of the PASCAL_MT dataset. Set the variable seism_root to the root of the seism-master directory from this codebase (root/seism-master).
 
-* Open the script root/Multi-Task-Learning-PyTorch-master/evaluation/eval_edge2.py. Set the variable edge_pred_paths as a list of paths of directories where the predicted edges of the validation set are saved as .png images. The predicted edges need to be of the same size as the original image.
+* Open the script root/Multi-Task-Learning-PyTorch-master/evaluation/eval_edge2.py. Set the variable edge_pred_paths to a list of paths of directories where the predicted edges of the validation set are saved as .png images. The predicted edge .png images need to be of the same size as the original input image.
 
 * Open the script root/Multi-Task-Learning-PyTorch-master/evaluation/seism/pr_curves_base.m. Make sure that the variable gt_set has a value 'val', so that only validation data points are evaluated.
 
