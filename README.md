@@ -4,7 +4,7 @@ This repository is a quick and not so pretty solution for reproducing the edge e
 
 # How to use
 
-* Open the script root/seism-master/src/gt_wrappers/db_root_dir.m and set db_root_dir=EDGE_LABEL_PATHS. EDGE_LABEL_PATHS should be the path to where the edge labels are stored as .mat files. In the .mat files, the pascal-context semantic segmentation classes should actually be stored, because edges are defined as borders between semantic classes. The .mat files should be inside a directory called "trainval" which is inside EDGE_LABEL_PATHS.
+* Open the script root/seism-master/src/gt_wrappers/db_root_dir.m and set the variable db_root_dir to the path where the edge labels are stored as .mat files. In the .mat files, the pascal-context semantic segmentation classes should actually be stored, because edges are defined as borders between semantic classes. The .mat files should be inside a directory called "trainval" which is inside EDGE_LABEL_PATHS.
 
 * Open the script root/Multi-Task-Learning-PyTorch-master/utils/mypath.py. Set the variable db_root to the directory of the PASCAL_MT dataset. Set the variable seism_root to the root of the seism-master directory from this codebase (root/seism-master).
 
